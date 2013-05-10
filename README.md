@@ -8,11 +8,11 @@ Note that presentation tier is not available in this template btu you can easily
 
 This project uses the following APIs:
 
-Spring Framework 3.2.2
-Hibernate 4.2.1
-Hibernate Validator 5
-Javax Inject 1
-HSQLDB 2.2.9
+ * Spring Framework 3.2.2
+ * Hibernate 4.2.1
+ * Hibernate Validator 5
+ * Javax Inject 1
+ * HSQLDB 2.2.9
 
 IMPORTANT: Before change the Datasource set up in applicationContext.xml to anything else, remember to change 
 the parameter hibernate.hbm2ddl.auto in persistence.xml to avoid problems with your database.
