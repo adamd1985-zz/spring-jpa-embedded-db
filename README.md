@@ -1,7 +1,7 @@
 spring-jpa-embedded-db
 ======================
 
-A simple template project that uses Spring, JPA, Hibernate and an embedded HSQLDB
+A simple template project that uses Spring Data, JPA, Hibernate and an embedded HSQLDB
 
 The motivation of this project is to serve as a template for new projects using Spring and JPA.
 Note that presentation tier is not available in this template btu you can easily extend it to meet your needs.
@@ -9,6 +9,7 @@ Note that presentation tier is not available in this template btu you can easily
 This project uses the following APIs:
 
  * Spring Framework 3.2.2
+ * Spring Data 1.3.2
  * Hibernate 4.2.1
  * Hibernate Validator 5
  * Javax Inject 1

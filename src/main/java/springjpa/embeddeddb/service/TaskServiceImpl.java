@@ -5,26 +5,26 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import springjpa.embeddeddb.dao.TaskDAO;
 import springjpa.embeddeddb.model.Task;
+import springjpa.embeddeddb.repository.TaskRepository;
 
 @Service @Transactional
 public class TaskServiceImpl implements TaskService {
 
     @Inject
-    private TaskDAO taskDAO;
+    private TaskRepository taskDAO;
 
     @Transactional(readOnly = true)
     public Task findTaskByPk(Long pk) {
-        return taskDAO.findByPk(pk);
+        return taskDAO.findOne(pk);
     }
 
     public void doTask(Task task) {
         task.doIt();
-        taskDAO.merge(task);
+        taskDAO.save(task);
     }
 
     public void insertTask(Task task) {
-        taskDAO.insert(task);
+        taskDAO.save(task);
     }
 }
