@@ -18,7 +18,7 @@
 		<hsqldb.version>2.2.9</hsqldb.version>
 		<spring.data.jpa.version>1.3.2.RELEASE</spring.data.jpa.version>
 		<junit.version>4.11</junit.version>
-		<spring.test.version>2.5</spring.test.version>
+		<spring.test.version>3.2.2.RELEASE</spring.test.version>
 		<log4j.version>1.2.14</log4j.version>
 		<hamcrest.version>1.3</hamcrest.version>
 		<slf4j.version>1.7.5</slf4j.version>
