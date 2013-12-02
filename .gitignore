@@ -5,5 +5,7 @@
 .classpath
 .project
 .settings
-target
-
+target/
+build/
+.gradle
+gradle/
